@@ -1,0 +1,15 @@
+
+serverAddr = "127.0.0.1"
+serverPort = 7001
+
+# 日志配置
+log.to = "./frpc.log"
+log.level = "info"
+
+# SSH 隧道配置（colab 22端口映射到服务器7502端口）
+[[proxies]]
+name = "ssh"
+type = "tcp"
+localIP = "127.0.0.1"
+localPort = 22
+remotePort = 7502
