@@ -1,0 +1,14 @@
+2025-07-02 22:30:39.668 [I] [frps/root.go:105] frps uses config file: frps.toml
+2025-07-02 22:30:39.932 [I] [server/service.go:237] frps tcp listen on 0.0.0.0:7001
+2025-07-02 22:30:39.932 [I] [frps/root.go:114] frps started successfully
+2025-07-02 22:30:39.932 [I] [server/service.go:351] dashboard listen on 0.0.0.0:7501
+2025-07-02 22:34:46.495 [I] [server/dashboard_api.go:107] http request: [/api/serverinfo]
+2025-07-02 22:34:46.495 [I] [server/dashboard_api.go:100] http response [/api/serverinfo]: code [200]
+2025-07-02 22:37:07.496 [I] [frps/root.go:105] frps uses config file: frps.toml
+2025-07-02 22:37:07.690 [I] [server/service.go:237] frps tcp listen on 0.0.0.0:7001
+2025-07-02 22:37:07.690 [I] [frps/root.go:114] frps started successfully
+2025-07-02 22:37:07.690 [I] [server/service.go:351] dashboard listen on 0.0.0.0:7501
+2025-07-02 22:37:18.115 [I] [frps/root.go:105] frps uses config file: frps.toml
+2025-07-02 22:37:18.223 [I] [server/service.go:237] frps tcp listen on 0.0.0.0:7001
+2025-07-02 22:37:18.223 [I] [frps/root.go:114] frps started successfully
+2025-07-02 22:37:18.223 [I] [server/service.go:351] dashboard listen on 0.0.0.0:7501
