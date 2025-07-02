@@ -1,4 +1,4 @@
 *.tar.gz
 frpc.toml
 #
-id_rsa.pub
+# id_rsa.pub
