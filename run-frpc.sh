@@ -83,29 +83,13 @@ serverPort = 7001
 log.to = "./frpc.log"
 log.level = "info"
 
-# SSH 隧道配置（示例）
+# SSH 隧道配置（colab 22端口映射到服务器7502端口）
 [[proxies]]
 name = "ssh"
 type = "tcp"
 localIP = "127.0.0.1"
 localPort = 22
-remotePort = 6000
-
-# Jupyter 配置（colab 常用）
-[[proxies]]
-name = "jupyter"
-type = "tcp"
-localIP = "127.0.0.1"
-localPort = 8888
-remotePort = 8888
-
-# HTTP 服务配置（可选）
-[[proxies]]
-name = "web"
-type = "http"
-localIP = "127.0.0.1"
-localPort = 8080
-customDomains = ["your-domain.com"]
+remotePort = 7502
 EOF
 
 # 设置执行权限
@@ -114,9 +98,7 @@ chmod +x "$FRP_DIR/frpc"
 echo "配置完成！"
 echo "frpc 配置文件位置: $FRP_DIR/frpc.toml"
 echo "隧道配置："
-echo "  - SSH: $FRPS_SERVER_IP:6000 -> localhost:22"
-echo "  - Jupyter: $FRPS_SERVER_IP:8888 -> localhost:8888"
-echo "  - Web: your-domain.com -> localhost:8080"
+echo "  - SSH: $FRPS_SERVER_IP:7502 -> localhost:22"
 
 # 启动 frpc
 echo "启动 frpc 客户端..."
