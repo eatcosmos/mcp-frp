@@ -1,23 +1,10 @@
 #!/bin/bash
 
-# 查找 mcp-frp 项目目录
-find_mcp_frp() {
-    # 使用 find 命令在 $HOME 下递归查找 mcp-frp 目录
-    local found_dir=$(find "$HOME" -name "mcp-frp" -type d 2>/dev/null | head -1)
-    
-    if [ -n "$found_dir" ]; then
-        echo "$found_dir"
-        return 0
-    fi
-    
-    # 如果找不到，报错退出
-    echo "错误: 在 $HOME 下找不到 mcp-frp 目录"
-    echo "请确保 mcp-frp 项目目录存在"
-    exit 1
-}
+git config --global user.name "John Doe"
+git config --global user.email johndoe@example.com
 
 # 设置变量
-MCP_FRP_DIR=$(find_mcp_frp)
+MCP_FRP_DIR=$HOME/code/mcp-frp
 FRP_VERSION="0.63.0"
 FRP_ARCH="linux_amd64"
 FRP_URL="https://github.com/fatedier/frp/releases/download/v${FRP_VERSION}/frp_${FRP_VERSION}_${FRP_ARCH}.tar.gz"
